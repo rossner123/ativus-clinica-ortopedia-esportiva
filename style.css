@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    color: #fff;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #B23437;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+  
+.headerTop i {
+    font-size: 15px;
+}
+
+.textHeader span{
+    font-weight: bold;
+}
+
+.contato{
+    display: flex;
+    gap: 20px;
+}
+
+.contato div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.headerMiddle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerMiddle img{
+    width: 257px;
+}
+
+.botoesMiddle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btnAgendar, .btnResultadoExames{
+    font-size: 11px;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btnAgendar{
+    background-color: #B23437;
+}
+
+.btnAgendar:hover{
+    background-color: #3B468F;
+}
+
+.btnResultadoExames{
+    background-color: #3B468F;
+}
+
+.btnResultadoExames:hover{
+    background-color: #B23437;
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerNav a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    padding: 15px 8px 0 8px;
+    border-top: 4px solid transparent;
+}
+
+.headerNav a:hover{
+    border-top: 4px solid #B23437;
+}
