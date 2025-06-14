@@ -18,7 +18,7 @@ header{
     align-items: center;
     padding: 20px 50px;
     background-color: #B23437;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 2px;
 }
   
@@ -58,7 +58,7 @@ header{
 }
 
 .btnAgendar, .btnResultadoExames{
-    font-size: 11px;
+    font-size: 0.75rem;
     color: #fff;
     padding: 8px 10px;
     border: none;
@@ -91,7 +91,7 @@ header{
 }
 
 .nav{
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -99,12 +99,128 @@ header{
 
 .headerNav a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.70rem;
     color: black;
-    padding: 15px 8px 0 8px;
+    padding: 15px 8px 1.3rem;
     border-top: 4px solid transparent;
 }
 
 .headerNav a:hover{
-    border-top: 4px solid #B23437;
+    border-top: 4px solid #3B468F;
+    color: #3B468F;
+}
+
+.imageCenter{
+    height: 500px;
+    width: 100%;
+    background-image: url("./images/imagem-central.avif");
+    background-size: cover;
+}
+
+.bemVindo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.sobreNos{
+    max-height: 500px;
+    position: relative;
+}
+
+.sobreNos img{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.textoBemVindo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    background-color: #3B468F;
+    width: 100%;
+    max-width: 500px;
+    height: 45%;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+.textoBemVindo h2{
+    font-size: 1.2rem;
+    max-width: 60%;
+    margin-top: 1rem;
+}
+
+.textoBemVindo p{
+    font-size: 0.75rem;
+    max-width: 90%;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+.sobreNos:hover .textoBemVindo{
+    height: 65%;
+    padding: 1.5rem 0 0 0;
+    gap: 1.5rem;
+}
+
+.textoExtra{
+    font-size: 0.85rem !important;
+    opacity: 0;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.sobreNos:hover .textoExtra{
+    opacity: 1;
+}
+
+.textoExtra:hover{
+    text-decoration: underline;
+}
+
+.areasAtuacao {
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.areasAtuacao h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.gridAreas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.area {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.area span{
+    font-weight: bold;
+}
+
+.areasAtuacao img {
+    height: 108px;
+    width: 111px;
 }
