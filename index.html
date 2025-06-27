@@ -54,7 +54,15 @@
             </div>
         </header>
     
-        <div class="imageCenter"></div>
+        <div class="slider">
+            <div class="slides">
+                <img src="./images/slide1.avif" alt="" class="slide active">
+                <img src="./images/slide2.avif" alt="" class="slide">
+                <img src="./images/slide3.jpg" alt="" class="slide">
+            </div>
+            <button class="prev" onclick="mudarSlide(-1)">❮</button>
+            <button class="next" onclick="mudarSlide(1)">❯</button>
+        </div>
     
         <div class="bemVindo">
             <div class="sobreNos">
@@ -94,5 +102,6 @@
     
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

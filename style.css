@@ -110,12 +110,40 @@ header{
     color: #3B468F;
 }
 
-.imageCenter{
+.slider{
     height: 500px;
     width: 100%;
-    background-image: url("./images/imagem-central.avif");
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    min-width: 100%;
+}
+
+.slide.active{
+    display: block;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.prev{ left: 10px; }
+.next{ right: 10px; }
 
 .bemVindo{
     width: 100%;
