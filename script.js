@@ -1,32 +1,40 @@
-let slideAtual = 0
-const slides = document.querySelectorAll(".slide")
-const slidesContainer = document.querySelector(".slides")
-let intervalo
+let slideAtual = 0;
+const slidesContainer = document.querySelector(".slides");
+let slides = document.querySelectorAll(".slide");
 
-function mostrarSlide(index){
-    slides.forEach((slide, i) => {
-        slide.classList.remove("active")
-        if(i === index){
-            slide.classList.add("active")
-        }
-    }) 
-    const larguraSlide = slides[0].clientWidth;
-    slidesContainer.style.transform = `translateX(-${index * larguraSlide}px)`
+let totalSlides = slides.length;
+
+function adicionaSlide(i) {
+  const primeiroClone = slides[i - 1].cloneNode(true);
+  slidesContainer.appendChild(primeiroClone);
+
+  slides = document.querySelectorAll(".slide");
+  totalSlides = slides.length;
+}   
+
+let intervalo;
+
+function mostrarSlide(index) {
+    const larguraSlide = slides[index].clientWidth;
+    slidesContainer.style.transition = "transform 0.5s ease";
+    slidesContainer.style.transform = `translateX(-${index * larguraSlide}px)`;
 }
 
-function mudarSlide(step){
-    slideAtual = (slideAtual + step + slides.length) % slides.length;
-    mostrarSlide(slideAtual)
-    reiniciarIntervalo()
+function mudarSlide(step) {
+    slideAtual += step;
+    mostrarSlide(slideAtual);
+    adicionaSlide(slideAtual)
+    reiniciarIntervalo();
+    
 }
 
 function reiniciarIntervalo(){
-    clearInterval(intervalo)
-    iniciarIntervalo()
+    clearInterval(intervalo);
+    iniciarIntervalo();
 }
 
 function iniciarIntervalo(){
-    intervalo = setInterval(() => mudarSlide(1), 5000)
+    intervalo = setInterval(() => mudarSlide(1), 3000);
 }
 
-iniciarIntervalo()
+iniciarIntervalo();
