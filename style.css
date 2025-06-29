@@ -17,7 +17,7 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px 50px;
-    background-color: #B23437;
+    background-color: #003DA5;
     font-size: 0.75rem;
     letter-spacing: 2px;
 }
@@ -49,6 +49,8 @@ header{
 
 .headerMiddle img{
     width: 257px;
+    height: 160px;
+    object-fit: cover;
 }
 
 .botoesMiddle{
@@ -69,19 +71,19 @@ header{
 }
 
 .btnAgendar{
-    background-color: #B23437;
+    background-color: #003DA5;
 }
 
 .btnAgendar:hover{
-    background-color: #3B468F;
+    background-color: #0077DB;
 }
 
 .btnResultadoExames{
-    background-color: #3B468F;
+    background-color: #0077DB;
 }
 
 .btnResultadoExames:hover{
-    background-color: #B23437;
+    background-color: #003DA5;
 }
 
 .headerNav{
@@ -106,8 +108,8 @@ header{
 }
 
 .headerNav a:hover{
-    border-top: 4px solid #3B468F;
-    color: #3B468F;
+    border-top: 4px solid #0077DB;
+    color: #0077DB;
 }
 
 .slider{
@@ -152,7 +154,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .sobreNos{
@@ -160,9 +162,10 @@ header{
     position: relative;
 }
 
-.sobreNos img{
-    max-height: 500px;
-    max-width: 500px;
+.sobreNos img {
+    width: 100%;
+    height: 500px;
+    filter: saturate(70%);
 }
 
 .textoBemVindo{
@@ -174,7 +177,7 @@ header{
     gap: 1rem;
     position: absolute;
     bottom: 0;
-    background-color: #3B468F;
+    background-color: #0077DB;
     width: 100%;
     max-width: 500px;
     height: 45%;
@@ -227,6 +230,7 @@ header{
     font-size: 1.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
+    color: #003DA5;
 }
 
 .gridAreas {
@@ -250,6 +254,103 @@ header{
 }
 
 .areasAtuacao img {
-    height: 108px;
-    width: 111px;
+    height: 100px;
+    width: 100px;
+}
+
+.convenios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1rem 4rem;
+    text-align: center;
+}
+
+.convenios h2{
+    color: #003DA5;
+    font-size: 35px;
+}
+
+.subtituloConvenios {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.logosConvenios{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.prev2, .next2{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    padding: 5px 10px;
+    background-color: #0077DB;
+    color: #fff;
+}
+
+.prev2{ left: 0; }
+.next2{ right: 0; }
+
+.logosConvenios img {
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logosConvenios img:hover {
+    transform: scale(1.05);
+}
+
+.localizacaoContato{
+    padding: 3rem 1rem 4rem ;
+    background-color: #f4f4f4;
+}
+
+.containerContato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.infoContato h2{
+    color: #003DA5;
+    margin-bottom: 1rem;
+}
+
+.infoContato p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.infoContato i{
+    color: #0077DB;
+    margin-right: 0.5rem;
+}
+
+.mapaContato{
+    width: 40%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    width: 100%;
+    background-color: #003DA5;
+    border-top: 1px solid #fff2;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #ccc;
 }

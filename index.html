@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ativus - Clínica Ortopédica</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./images/medicine.png">
+    <link rel="shortcut icon" type="imagex/png" href="./images/bonequinho-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -32,7 +33,7 @@
             </div>
     
             <div class="headerMiddle">
-                <img src="./images/SOS LOGO MED-1.avif" alt="">
+                <img src="./images/logo-ativus.png" alt="">
     
                 <div class="botoesMiddle">
                     <button class="btnAgendar">AGENDAR CONSULTA</button>
@@ -56,7 +57,7 @@
     
         <div class="slider">
             <div class="slides">
-                <img src="./images/slide1.avif" alt="" class="slide active">
+                <img src="./images/slide1.avif" alt="" class="slide active" style="filter: saturate(150%);">
                 <img src="./images/slide2.avif" alt="" class="slide">
                 <img src="./images/slide3.jpg" alt="" class="slide">
             </div>
@@ -66,7 +67,7 @@
     
         <div class="bemVindo">
             <div class="sobreNos">
-                <img src="./images/medical-services.webp" alt="">
+                <img src="./images/medical-services3.jpg" alt="">
                 <div class="textoBemVindo">
                     <h2>SEJA BEM-VINDO À <br> S.O.S CONSULTAS MÉDICAS</h2>
                     <p>A S.O.S Consultas Médicas é uma rede de Clínicas Médicas e Odontológicas Popular, com o objetivo de oferecer
@@ -82,25 +83,68 @@
     
                 <div class="gridAreas">
                     <div class="area">
-                        <img src="./images/imgTeste.avif" alt="">
+                        <img src="./images/icon1.png" alt="">
                         <p>Mais de <span>20 especialidades médicas</span></p>
                     </div>
                     <div class="area">
-                        <img src="./images/imgTeste.avif" alt="">
+                        <img src="./images/icon2.png" alt="">
                         <p>Grande variedade de <span>exames</span></p>
                     </div>
                     <div class="area">
-                        <img src="./images/imgTeste.avif" alt="">
+                        <img src="./images/icon3.png" alt="">
                         <p><span>Ortopedia</span> em todas as unidades S.O.S</p>
                     </div>
                     <div class="area">
-                        <img src="./images/imgTeste.avif" alt="">
+                        <img src="./images/icon4.png" alt="">
                         <p><span>Telemedicina</span> consultas médicas sem sair de casa</p>
                     </div>
                 </div>
-            </div>
-    
+            </div>  
         </div>
+
+        <div class="convenios">
+            <div>
+                <h2>Convênios Atendidos</h2>
+                <p class="subtituloConvenios">Confira os principais convênios aceitos em nossas unidades</p>
+            </div>
+
+            <div class="logosConvenios">
+                <img src="./images/logo-unimed.svg" alt="Unimed">
+                <img src="./images/logo-bradesco.png" alt="Bradesco Saúde">
+                <img src="./images/logo-amil.png" alt="Amil" style="height: 35px;">
+                <img src="./images/logo-sulamerica.png" alt="SulAmérica">
+                <img src="./images/logo-gama-saude.gif" alt="">
+
+                 <button class="prev2" onclick="mudarConvenio(-1)">❮</button>
+                <button class="next2" onclick="mudarConvenio(1)">❯</button>
+            </div>
+
+           
+        </div>
+
+
+        <div class="localizacaoContato">
+            <div class="containerContato">
+                <div class="infoContato">
+                    <h2>Localização e Contato</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Exemplo, 123 - Porto Alegre, RS</p>
+                    <p><i class="fas fa-phone"></i> (51) 3920.1000</p>
+                    <p><i class="fab fa-whatsapp"></i> (51) 99189.6513</p>
+                    <p><i class="fas fa-envelope"></i> contato@ativus.com.br</p>
+                </div>
+                <div class="mapaContato">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.270372275258!2d-51.22918448488884!3d-30.03464729152454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197905233f8b71%3A0x92ba76a5a5fc1f59!2sPorto%20Alegre%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1710000000000"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025  Ativus Clínica Ortopédica. Todos os direitos reservados.</p>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
