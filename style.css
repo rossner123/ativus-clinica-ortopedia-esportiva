@@ -258,57 +258,79 @@ header{
     width: 100px;
 }
 
-.convenios{
+.convenios {
+    background-color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 1rem 4rem;
-    text-align: center;
 }
 
-.convenios h2{
+.convenios h2 {
     color: #003DA5;
-    font-size: 35px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .subtituloConvenios {
     font-size: 1rem;
     color: #555;
-    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
-.logosConvenios{
-    width: 80%;
+.carrosselConvenios {
     display: flex;
-    justify-content: space-around;
-    margin-top: 0.5rem;
+    justify-content: center;
     position: relative;
+    max-width: 75%;
 }
 
-.prev2, .next2{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    border: none;
-    padding: 5px 10px;
-    background-color: #0077DB;
-    color: #fff;
+.mascaraCarrossel {
+    overflow: hidden;
+    width: 90%;
+    padding: 0 3rem;
+    box-sizing: border-box;
 }
 
-.prev2{ left: 0; }
-.next2{ right: 0; }
+.logosConvenios {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 0;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
 
 .logosConvenios img {
-    height: 40px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    height: 50px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
 .logosConvenios img:hover {
     transform: scale(1.05);
 }
+
+.prev2, .next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #0077DB;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.prev2:hover, .next2:hover {
+    background-color: #005fa3;
+}
+
+.prev2 { left: 0px;}
+.next2 { right: 0px; }
 
 .localizacaoContato{
     padding: 3rem 1rem 4rem ;
