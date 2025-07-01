@@ -107,7 +107,7 @@ header{
     border-top: 4px solid transparent;
 }
 
-.headerNav a:hover{
+.headerNav a:hover, a.ativo{
     border-top: 4px solid #0077DB;
     color: #0077DB;
 }
@@ -187,7 +187,7 @@ header{
 
 .textoBemVindo h2{
     font-size: 1.2rem;
-    max-width: 60%;
+    max-width: 70%;
     margin-top: 1rem;
 }
 
